@@ -17,5 +17,12 @@ app.value("KINVEY", {
     "appSecret" : "YOUR APP SECRET VALUE"
 });
 ```
+###Screenshots
+------------
+Login Screen
+![Login Screen](https://raw.githubusercontent.com/aaronksaunders/angular-kinvey-dataservices-example/master/Screenshots/Login%20Screen.png)
 
+
+Manage Data With HTTP Verbs
+![Manage Data With HTTP Verbs](https://raw.githubusercontent.com/aaronksaunders/angular-kinvey-dataservices-example/master/Screenshots/CRUD%20Screen.png)
  
