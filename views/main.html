@@ -1,0 +1,88 @@
+<!--
+  see http://getbootstrap.com/css/#forms-horizontal for information on
+  how these forms were constructed using bootstrap
+-->
+<form class="form-horizontal">
+
+    <!-- get model based on Id -->
+    <div class="form-group ">
+        <label for="get-input" class="col-sm-4 control-label">
+            Get a specific object using the REST verb GET, if an id is specified return single element else return the
+            list of objects
+        </label>
+
+        <div class="col-sm-6">
+            <br>
+            <input type="text" class="form-control" id="get-input"
+                   ng-model="getData.id"
+                   placeholder="model id">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-10">
+            <button class="btn btn-primary" ng-click="doGet()">GET - GET</button>
+        </div>
+    </div>
+
+    <!-- create model based json data -->
+    <hr>
+    <div class="form-group">
+        <label for="post-input" class="col-sm-4 control-label">
+            Create an object using the REST verb POST and specify the model data using JSON format
+        </label>
+
+        <div class="col-sm-6">
+            <br>
+            <textarea class="form-control" id="post-input"
+                      ng-model="postData.data"
+                      placeholder="json formatted updates"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-10">
+            <button class="btn btn-primary" ng-click="doPost()">POST - CREATE</button>
+        </div>
+    </div>
+
+    <!-- update model based on Id -->
+    <hr>
+    <div class="form-group">
+        <label for="put-input" class="col-sm-4 control-label">
+            Update the object using REST verb PUT and specify the model id and any updates required using JSON format
+        </label>
+
+        <div class="col-sm-6">
+            <span></span>
+            <br>
+            <input type="text" class="form-control" id="put-input-id"
+                   ng-model="putData.id" placeholder="model id"><br>
+            <textarea class="form-control" id="put-input"
+                      ng-model="putData.data"
+                      placeholder="json formatted updates"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-10">
+            <button class="btn btn-primary" ng-click="doPut()">PUT - UPDATE</button>
+        </div>
+    </div>
+
+    <!-- delete model based on Id -->
+    <hr>
+    <div class="form-group ">
+        <label for="delete-input" class="col-sm-4 control-label">
+            Get a delete object using the REST verb DELETE and specify the model id
+        </label>
+
+        <div class="col-sm-6">
+            <br>
+            <input type="text" class="form-control" id="delete-input"
+                   ng-model="deleteData.id" placeholder="model id">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-10">
+            <button class="btn btn-primary" ng-click="doDelete()">DELETE - REMOVE</button>
+        </div>
+    </div>
+</form>

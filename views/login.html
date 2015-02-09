@@ -1,0 +1,33 @@
+<!-- get model based on Id -->
+<form class="form-horizontal">
+    <div class="form-group ">
+        <label for="username-input" class="col-sm-4 control-label">
+            Username
+        </label>
+
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="username-input"
+                   ng-model="creds.username"
+                   placeholder="email address">
+        </div>
+    </div>
+
+    <div class="form-group ">
+        <label for="password-input" class="col-sm-4 control-label">
+            Password
+        </label>
+
+        <div class="col-sm-6">
+            <input type="password" class="form-control" id="password-input"
+                   ng-model="creds.password"
+                   placeholder="password">
+        </div>
+    </div>
+
+    <div class="form-group ">
+        <div class="col-sm-offset-4 col-sm-6">
+            <button ng-click="doLoginAction()" class="btn btn-primary">Login</button>
+            <button ng-click="doLogoutAction()" class="btn btn-danger">Logout</button>
+        </div>
+    </div>
+</form>
