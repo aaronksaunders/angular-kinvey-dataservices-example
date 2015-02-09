@@ -36,9 +36,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 app.value("KINVEY", {
-    "auth": "YOUR VALUES",
-    "appUrl": "https://baas.kinvey.com/appdata/kid_-JeiCLZM5/",
-    "baseUrl": "https://baas.kinvey.com/appdata/kid_-JeiCLZM5/",
-    "appId" : "kid_-JeiCLZM5",
-    "appSecret" : "YOUR VALUES"
+    "auth": "YOUR BASIC AUTH VALUES",
+    "appUrl": "https://baas.kinvey.com/appdata/YOUR APP ID/",
+    "baseUrl": "https://baas.kinvey.com/appdata/YOUR APP ID/",
+    "appId" : "YOUR APP ID",
+    "appSecret" : "YOUR APP SECRET VALUE"
 });
